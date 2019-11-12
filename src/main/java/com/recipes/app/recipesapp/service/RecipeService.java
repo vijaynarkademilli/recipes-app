@@ -15,13 +15,12 @@ import java.util.List;
 public class RecipeService {
 
     private static List<Recipe> recipes = new ArrayList();
-    private static int id = 0;
 
     static {
-        recipes.add(new Recipe(++id,"Big Fat Burger","This is simple test","https://tul.imgix.net/content/article/perths_best_burgers.jpg", Arrays.asList(new Ingredient(1, "Bun",2),
-                new Ingredient(2, "French Fries",30))));
-        recipes.add(new Recipe(++id,"Rice Kheer","This is simple test","https://aartimadan.com/wp-content/uploads/2019/07/rice-kheer-recipe-images-6.jpg", Arrays.asList(new Ingredient(1, "Thick Milk",1),
-                new Ingredient(2, "Almonds",50))));
+        recipes.add(new Recipe("Big Fat Burger","This is simple test","https://tul.imgix.net/content/article/perths_best_burgers.jpg", Arrays.asList(new Ingredient("Bun",2),
+                new Ingredient("French Fries",30))));
+        recipes.add(new Recipe("Rice Kheer","This is simple test","https://aartimadan.com/wp-content/uploads/2019/07/rice-kheer-recipe-images-6.jpg", Arrays.asList(new Ingredient("Thick Milk",1),
+                new Ingredient("Almonds",50))));
     }
 
     public List<Recipe> findAll(){

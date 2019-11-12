@@ -5,22 +5,12 @@ package com.recipes.app.recipesapp.model;
  */
 public class Ingredient {
 
-    private long id;
     private String name;
     private double amount;
 
-    public Ingredient(long id, String name, double amount) {
-        this.id = id;
+    public Ingredient(String name, double amount) {
         this.name = name;
         this.amount = amount;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getName() {
